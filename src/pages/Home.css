@@ -1,0 +1,154 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure body doesn't scroll horizontally */
+body {
+  overflow-x: hidden;
+}
+
+/* Container Styles */
+.home {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow items to wrap for small screens */
+  background: #001b29;
+}
+
+/* Content Styles */
+.home-content {
+  max-width: 600px;
+  flex: 1 1 300px; /* Allow content to shrink and grow */
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.home-content h1 {
+  font-size: var(--big-font);
+  font-weight: 700;
+}
+
+.change-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.change-text h3 {
+  display: inline-flex;
+  margin: 0;
+}
+
+/* Social Icons Styles */
+.home-sci {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Added gap for better spacing */
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  margin: 0;
+}
+
+.home-sci a:hover {
+  background: #0ef;
+  color: #081b29;
+  box-shadow: 0 0 20px #0ef;
+}
+
+/* Button Styles */
+.btn-box {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081b29;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-box:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+/* Image Container Styles */
+.img-home {
+  flex: 1 1 300px; /* Allow image to shrink and grow */
+  display: flex;
+  justify-content: center;
+}
+
+.img-home img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content, .img-home {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+   .img-home{
+       height: 100px;
+   }
+
+  .home-sci {
+    justify-content: center;
+  }
+
+  .home-sci a {
+    margin: 15px;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+  
+  .home-content h3 {
+    font-size: small;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-box {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,71 @@
+/* src/components/Footer.css */
+.footer {
+    background: linear-gradient(135deg, #001b29, #002b36); /* Gradient background for a premium look */
+    color: #ffffff;
+    padding: 3rem 1rem; /* Increased padding for a more spacious feel */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 5px solid #00eeff; /* Top border to add elegance */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; /* Increased gap for better spacing */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-info,
+  .footer-links,
+  .expense-breakdown {
+    flex: 1;
+    min-width: 250px; /* Increased minimum width for a more balanced layout */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Increased font size for headings */
+    margin-bottom: 1rem;
+    color: #00eeff; /* Color for headings to match the theme */
+  }
+  
+  p, ul {
+    margin: 0.5rem 0;
+    color: #e0e0e0; /* Light text color for readability */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-links a {
+    color: #ffffff; /* Light color for links */
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #00eeff; /* Change color on hover */
+    text-shadow: 0 0 5px rgba(0, 238, 255, 0.5); /* Subtle glow effect */
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #34495e;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #e0e0e0;
+  }
+  

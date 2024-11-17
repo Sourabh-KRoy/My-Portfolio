@@ -1,0 +1,172 @@
+.heading {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.education {
+    /* padding: 100px 15px; */
+    background: #001b29;
+}
+
+.education h2 {
+    margin-bottom: 4rem;
+}
+
+.timeline-items {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #0ef;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+    text-align: left;
+}
+
+.timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: #0ef;
+    box-shadow: 0 0 25px #0ef, 0 0 50px #0ef;
+    position: absolute;
+    left: calc(50% - 10.5px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+.timeline-content {
+    background-color: var(--bg-color);
+    border: 3px solid #0ef;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #0ef;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    /* Prevent overflow */
+    text-align: left;
+    /* Ensure left-aligned text */
+}
+
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #0ef;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content h6 {
+    font-size: 18px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.timeline-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+    /* Ensure no extra margins */
+    overflow-wrap: break-word;
+    /* Handle long words */
+}
+
+@media only screen and (max-width: 600px) {
+    .timeline-items {
+        max-width: 100%;
+        padding: 0 15px;
+        position: relative; 
+    }
+
+    .timeline-items::before {
+        left: 15px;
+        transform: none;
+        z-index: -1;
+        /* Ensure the line is behind the dots */
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: left;
+        /* Align text to the left */
+        position: relative;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 0;
+        /* Adjust position to touch the line */
+        transform: none;
+
+        margin-top: 33%;
+        z-index: 1;
+        /* Ensu
+    re the dot is in front of the line */
+    }
+
+
+    .timeline-date {
+        text-align: center;
+        /* Center align the date */
+        margin-left: 0;
+        /* Remove any left margin */
+    }
+
+    .timeline-content {
+        height: auto;
+        padding: 15px;
+        margin-left: 40px;
+        /* Add margin to the left to account for the dot */
+        margin-top: 20px;
+        text-align: left;
+        /* Ensure text is aligned to the left */
+        position: relative;
+        z-index: 1;
+        /* Ensure the content is in front of the line */
+    }
+}

@@ -1,0 +1,116 @@
+/* src/pages/Contact.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #c3cfe2);
+  }
+  
+  .contact {
+    min-height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    background: #001b29;
+  }
+  
+  .sub-title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem 0;
+    color: #ffffff;
+  }
+  
+  .container {
+    padding: 2rem 4rem;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .contact-info, .contact-form {
+    background: #002b36;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 50%; /* Ensures each section takes up half the width */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  .contact-info {
+    margin-right: 1rem; /* Adds space between the contact info and form */
+  }
+  
+  .contact-form {
+    margin-left: 1rem; /* Adds space between the contact form and info */
+  }
+  
+  .contact-info h2, .contact-form h2 {
+    font-size: 2rem;
+    color: #00eeff;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info i {
+    font-size: 1.5rem;
+    color: #00eeff;
+    margin-right: 0.5rem;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .contact-form input {
+    background: #003347;
+    color: #ffffff;
+  }
+  
+  .contact-form textarea {
+    background: #003347;
+    color: #ffffff;
+  }
+  
+  .send-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #00eeff;
+    border: none;
+    border-radius: 25px;
+    color: #001b29;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .send-button:hover {
+    background: #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  }
+  
