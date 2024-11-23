@@ -3,9 +3,10 @@ import './Skills.css'
 
 const Skills = () => {
     return (
-        <div class="education">
-            <h2 class="heading">My <span>Education</span></h2>
-            <div class="timeline-items">
+        <div className="education pt-7">
+            <h2 className="text-3xl text-center text-white pb-7 font-semibold">
+                My <span className="text-[#0ef]">Education</span>
+            </h2>            <div class="timeline-items mt-3">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2024</div>
@@ -54,7 +55,6 @@ const Skills = () => {
                     </div>
 
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2018-20</div>
@@ -67,7 +67,6 @@ const Skills = () => {
                     </div>
 
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2018</div>

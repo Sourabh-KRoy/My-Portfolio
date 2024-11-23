@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+* {
+    box-sizing: border-box;
+    /* Ensure padding and border are included in element dimensions */
+}
